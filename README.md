@@ -48,7 +48,7 @@ This batch script is designed to clear the Recycle Bin and the Downloads folder.
 ### Usage
 
 1. Simply execute the script by double-clicking it or running it from a Command Prompt. You will be prompted to confirm the deletion.
-2. The script uses choice to ask for user confirmation. Type Y to proceed with the cleanup or N to cancel the operation.
+2. The script uses choice to ask for user confirmation. Type `Y` to proceed with the cleanup or `N` to cancel the operation.
 
 ### Additional Notes
 - Ensure you have the necessary permissions to delete files from the Recycle Bin and the Downloads folder.
