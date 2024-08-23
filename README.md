@@ -2,6 +2,12 @@
 
 BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScript (`.vbs`) files designed to simplify and automate repetitive tasks in Windows environments. Whether you're managing files, automating backups, or performing routine maintenance, this toolkit has something for you.
 
+
+## Scripts
+- [backup-and-clean.bat](#`backup-and-clean.bat`)
+- [run-hidden.vbs](#`run-hidden.vbs`)
+
+
 ## `backup-and-clean.bat`
 
 This batch script automates the process of creating compressed backups of a specified source directory and managing old backup files. It uses Windows built-in tools and PowerShell to perform its tasks.
