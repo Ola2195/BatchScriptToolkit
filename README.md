@@ -34,7 +34,7 @@ set "maxFileAgeDays=7"
 - This script requires PowerShell to compress the backup files. Make sure PowerShell is installed and accessible in your environment.
 - To automate this script, you can set up a task in Windows Task Scheduler to run it at desired intervals.
 
-## run-hidden.vbs
+## `run-hidden.vbs`
 
 A simple VBScript that allows you to run any script or executable file without displaying a Command Prompt window. This script is particularly useful for running batch files or other command-line programs in the background, without showing the terminal window that normally appears.
 
