@@ -18,4 +18,3 @@ rmdir /S /Q %systemdrive%\$Recycle.Bin
 del /Q "%userprofile%\Downloads\*"
 
 endlocal
-

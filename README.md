@@ -5,7 +5,8 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 
 ## Scripts
 - [backup-and-clean.bat](#backup-and-cleanbat)
-- [leanup-script.bat](#leanup-scriptbat)
+- [cleanup-script.bat](#cleanup-scriptbat)
+- [disk-space-check.bat](#disk-space-checkbat)
 - [run-hidden.vbs](#run-hiddenvbs)
 
 
@@ -53,6 +54,28 @@ This batch script is designed to clear the Recycle Bin and the Downloads folder.
 ### Additional Notes
 - Ensure you have the necessary permissions to delete files from the Recycle Bin and the Downloads folder.
 - This script performs irreversible actions. Double-check that you want to delete all files in these directories before confirming.
+
+## `disk-space-check.bat`
+
+This batch script checks the free disk space on the C: drive and compares it to a specified threshold. If the free space is below the threshold, it displays a warning message. Otherwise, it indicates that there is sufficient disk space.
+
+### Features
+
+- Retrieves the free space on the C: drive in bytes and converts it to megabytes (MB).
+- Compares the free space to a user-defined threshold to determine if disk space is low.
+- Provides feedback based on whether the free space meets the threshold criteria.
+
+### Usage
+
+1. **Set Threshold**: Adjust the `threshold` variable to specify the minimum amount of free space (in MB) before a warning is issued.
+    ```batch
+    :: Set threshold for free space (in MB)
+    set "threshold=1000"
+    ```
+2. **Run the Script**: Execute the script to check disk space. It will display a warning if the free space is below the threshold or confirm that there is sufficient space.
+
+### Additional Notes
+- This script requires PowerShell to handle large number calculations. Ensure that PowerShell is available on your system.
 
 ## `run-hidden.vbs`
 
