@@ -5,6 +5,7 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 
 ## Scripts
 - [backup-and-clean.bat](#backup-and-cleanbat)
+- [leanup-script.bat](#leanup-scriptbat)
 - [run-hidden.vbs](#run-hiddenvbs)
 
 
@@ -39,6 +40,19 @@ set "maxFileAgeDays=7"
 - Ensure you have the necessary permissions to read from the source directory and write to the backup directory.
 - This script requires PowerShell to compress the backup files. Make sure PowerShell is installed and accessible in your environment.
 - To automate this script, you can set up a task in Windows Task Scheduler to run it at desired intervals.
+
+## `cleanup-script.bat`
+
+This batch script is designed to clear the Recycle Bin and the Downloads folder. It prompts the user for confirmation before proceeding to avoid accidental data loss.
+
+### Usage
+
+1. Simply execute the script by double-clicking it or running it from a Command Prompt. You will be prompted to confirm the deletion.
+2. The script uses choice to ask for user confirmation. Type Y to proceed with the cleanup or N to cancel the operation.
+
+### Additional Notes
+- Ensure you have the necessary permissions to delete files from the Recycle Bin and the Downloads folder.
+- This script performs irreversible actions. Double-check that you want to delete all files in these directories before confirming.
 
 ## `run-hidden.vbs`
 
