@@ -45,8 +45,8 @@ To run a batch file (`.bat`) or any executable (`.exe`) without showing a Comman
 ```bash
 wscript.exe "C:\Scripts\run-hidden.vbs" "C:\Path\To\YourScript.bat"
 ```
-Replace `C:\Scripts\run-hidden.vbs` with the actual path to your `run-hidden.vbs` file.
-Replace `C:\Path\To\YourScript.bat` with the path to the batch file or executable you want to run silently.
+- Replace `C:\Scripts\run-hidden.vbs` with the actual path to your `run-hidden.vbs` file.
+- Replace `C:\Path\To\YourScript.bat` with the path to the batch file or executable you want to run silently.
 
 ### Additional Notes
 - The run-hidden.vbs script supports only one argument, which is the full path to the script or executable you want to run silently.
