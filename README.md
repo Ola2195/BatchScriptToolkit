@@ -4,8 +4,8 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 
 
 ## Scripts
-- [backup-and-clean.bat](#`backup-and-clean.bat`)
-- [run-hidden.vbs](#`run-hidden.vbs`)
+- [backup-and-clean.bat](#backup-and-cleanbat)
+- [run-hidden.vbs](#run-hiddenvbs)
 
 
 ## `backup-and-clean.bat`
