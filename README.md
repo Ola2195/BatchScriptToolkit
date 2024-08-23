@@ -33,3 +33,22 @@ set "maxFileAgeDays=7"
 - Ensure you have the necessary permissions to read from the source directory and write to the backup directory.
 - This script requires PowerShell to compress the backup files. Make sure PowerShell is installed and accessible in your environment.
 - To automate this script, you can set up a task in Windows Task Scheduler to run it at desired intervals.
+
+## run-hidden.vbs
+
+A simple VBScript that allows you to run any script or executable file without displaying a Command Prompt window. This script is particularly useful for running batch files or other command-line programs in the background, without showing the terminal window that normally appears.
+
+### Usage
+
+To run a batch file (.bat) or any executable (.exe) without showing a Command Prompt window, open a Command Prompt or PowerShell window and use the following command:
+
+```bash
+wscript.exe "C:\Scripts\run-hidden.vbs" "C:\Path\To\YourScript.bat"
+```
+Replace "C:\Scripts\run-hidden.vbs" with the actual path to your run-hidden.vbs file.
+Replace "C:\Path\To\YourScript.bat" with the path to the batch file or executable you want to run silently.
+
+### Additional Notes
+- The run-hidden.vbs script supports only one argument, which is the full path to the script or executable you want to run silently.
+- Some antivirus programs may flag .vbs scripts as potentially harmful, especially if they execute other scripts or programs silently. Ensure your script and usage are secure and legitimate.
+- The script does not include any error handling. If the provided file path is incorrect or the file does not exist, no error message will be shown.
