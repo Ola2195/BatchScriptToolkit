@@ -15,18 +15,18 @@ This batch script automates the process of creating compressed backups of a spec
 ### Usage
 
 1. **Set Up Directories**: Ensure you have the correct source and backup directories defined in the script.
-``batch
+```batch
 :: Directory where backups will be stored
 set "backupDir=C:\BackupDirectory"
 
 :: Source directory that will be backed up
 set "source=C:\SourceDirectory"
-``
+```
 2. **Adjust Retention**: Modify the `maxFileAgeDays` variable to change how long backups are retained.
-``batch
+```batch
 :: Number of days to keep old backup files before deleting them
 set "maxFileAgeDays=7"
-``
+```
 3. **Run the Script**: You can run the script manually or set it up in the Task Scheduler for automatic execution.
 
 ### Additional Notes
