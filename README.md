@@ -5,6 +5,7 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 
 ## Scripts
 - [backup-and-clean.bat](#backup-and-cleanbat)
+- [batch-rename.bat](#batch-renamebat)
 - [cleanup-script.bat](#cleanup-scriptbat)
 - [disk-space-check.bat](#disk-space-checkbat)
 - [run-hidden.vbs](#run-hiddenvbs)
@@ -41,6 +42,42 @@ set "maxFileAgeDays=7"
 - Ensure you have the necessary permissions to read from the source directory and write to the backup directory.
 - This script requires PowerShell to compress the backup files. Make sure PowerShell is installed and accessible in your environment.
 - To automate this script, you can set up a task in Windows Task Scheduler to run it at desired intervals.
+
+## `batch-rename.bat`
+
+This batch script is designed to rename all files in a specified folder by adding both a prefix and a suffix to each file name. This can be particularly useful for organizing files by date or category.
+
+### Features
+
+- Adds a specified prefix to the beginning of each file name in the target folder.
+- Adds a suffix to the end of each file name, before the file extension.
+- Uses the current date and time to create a unique suffix for each file.
+
+### Usage
+
+1. **Configure the Script**: Before running the script, set the necessary configuration variables according to your needs:
+
+   ```batch
+   :: Folder containing files to rename
+   set "targetFolder=C:\Ola\Inne"
+
+   :: Prefix to add to each file
+   set "prefix=OLD_"
+
+   :: Suffix to add to each file
+   set "suffix=_%DATE:~-4,4%-%DATE:~-7,2%-%DATE:~-10,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%"
+   ```
+
+   - **`targetFolder`**: The folder where the files to be renamed are located.
+   - **`prefix`**: The text you want to add to the beginning of each file name.
+   - **`suffix`**: The text you want to add to the end of each file name.
+
+2. **Run the Script**: You can run the script manually or set it up in the Task Scheduler for automatic execution.
+
+### Additional Notes
+
+- If you have important data, make sure to back up your files before running batch rename operations. 
+- The script preserves the original file extensions when renaming.
 
 ## `cleanup-script.bat`
 
