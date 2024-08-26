@@ -9,12 +9,9 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 - [batch-rename.bat](#batch-renamebat)
 - [cleanup-script.bat](#cleanup-scriptbat)
 - [disk-space-check.bat](#disk-space-checkbat)
+- [sys-info.bat](#sys-infobat)
 - [run-hidden.vbs](#run-hiddenvbs)
 
-
-Here's the README entry for your `auto-screenshot.bat` script, formatted to match the rest of your documentation:
-
----
 
 ## `auto-screenshot.bat`
 
@@ -155,6 +152,35 @@ This batch script checks the free disk space on the C: drive and compares it to 
 
 ### Additional Notes
 - This script requires PowerShell to handle large number calculations. Ensure that PowerShell is available on your system.
+
+Here’s the README entry for your `sys-info.bat` script:
+
+## `sys-info.bat`
+
+This batch script generates a detailed system information report for Windows-based systems. The script creates two reports: one using the `systeminfo` command and another using PowerShell to capture extended system details with UTF-8 encoding.
+
+### Features
+
+- Captures comprehensive system details, including OS version, hardware information, network settings, and more.
+- Uses PowerShell to output a system report in UTF-8 encoding, ensuring compatibility with various text editors and preserving special characters.
+
+### Usage
+
+1. **Set Configuration Variables**: Before running the script, you may want to adjust the configuration variables:
+
+    ```batch
+    :: Output file paths
+    set "outputFile=C:\SystemInfo\system_report.txt"
+    set "outputFilePowerShell=C:\SystemInfo\system_report_powershell.txt"
+    ```
+
+2. **Run the Script**: Execute the script by double-clicking it or running it from a Command Prompt. It will generate system reports and save them to the specified output directory.
+
+### Additional Notes
+
+- Ensure you have the necessary permissions to create files in the output directory (`C:\SystemInfo` by default). Run the script with administrative privileges if needed.
+- If the `C:\SystemInfo` directory does not exist, the script will create it automatically.
+- This script requires PowerShell to generate a UTF-8 encoded report. Make sure PowerShell is available on your system.
 
 ## `run-hidden.vbs`
 
