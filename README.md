@@ -4,12 +4,54 @@ BatchScriptToolkit is a repository of various batch scripts (`.bat`) and VBScrip
 
 
 ## Scripts
+- [auto-screenshot.bat](#auto-screenshotbat)
 - [backup-and-clean.bat](#backup-and-cleanbat)
 - [batch-rename.bat](#batch-renamebat)
 - [cleanup-script.bat](#cleanup-scriptbat)
 - [disk-space-check.bat](#disk-space-checkbat)
 - [run-hidden.vbs](#run-hiddenvbs)
 
+
+Here's the README entry for your `auto-screenshot.bat` script, formatted to match the rest of your documentation:
+
+---
+
+## `auto-screenshot.bat`
+
+This batch script automatically captures screenshots of your desktop at regular intervals, saving them to a specified directory. This can be useful for monitoring, creating time-lapse videos, or keeping a record of on-screen activities.
+
+### Features
+
+- Takes screenshots at user-defined intervals.
+- Saves screenshots to a specified folder.
+- Saves each screenshot with a unique filename that includes the date and time.
+
+### Usage
+
+1. **Set Configuration Variables**: Before running the script, adjust the configuration variables as needed:
+
+    ```batch
+    :: Interval in seconds between screenshots
+    set "interval=60"
+
+    :: Output directory for screenshots
+    set "outputDir=%userprofile%\Pictures\Screenshots"
+    ```
+
+    - **`interval`**: Time in seconds between each screenshot. Modify `60` to your desired interval.
+    - **`outputDir`**: Directory where screenshots will be saved. The default is `%userprofile%\Pictures\Screenshots`, but this can be changed to any valid folder path.
+
+2. **Install NirCmd**: This script requires NirCmd, a small command-line utility for Windows. Download NirCmd from [NirSoft](https://www.nirsoft.net/utils/nircmd.html) and ensure `nircmd.exe` is placed in a directory that is included in your system's PATH or in the same directory as the script.
+
+3. **Run the Script**: Execute the script by double-clicking it or running it from a Command Prompt. It will start taking screenshots at the specified intervals.
+
+4. **Stopping the Script**: To stop the script, close the Command Prompt window or press `Ctrl + C` in the Command Prompt.
+
+### Additional Notes
+
+- Ensure you have the necessary permissions to create files in the output directory.
+- Running the script with a very short interval (e.g., every second) might impact system performance.
+- Make sure `nircmd.exe` is available on your system. The script uses NirCmd to take screenshots, and it must be properly installed or located in the script’s directory.
 
 ## `backup-and-clean.bat`
 
